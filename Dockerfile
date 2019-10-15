@@ -6,4 +6,4 @@ RUN apt-get -qq update && \
     apt-get -qq autoremove --yes
 
 RUN  R --slave -e "install.packages(c('xml2'), dependencies = TRUE)"
-RUN  R --slave -e "install.packages(c('MCMCpack', 'irtoys', 'lintr'), dependencies = TRUE)"
+RUN  R --slave -e "install.packages(c('MCMCpack', 'irtoys', 'lintr', 'doParallel'), dependencies = TRUE)"
