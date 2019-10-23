@@ -1,7 +1,7 @@
 FROM r-base:latest
 
 RUN apt-get -qq update && \
-    apt-get -qqy install libcurl4-openssl-dev libssl-dev libxml2-dev python3 python3-pip && \
+    apt-get -qqy install libcurl4-openssl-dev libssl-dev libxml2-dev python3 python3-pip git && \
     apt-get -qq clean autoclean &&\
     apt-get -qq autoremove --yes
 
