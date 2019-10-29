@@ -6,6 +6,6 @@ RUN apt-get -qq update && \
     apt-get -qq autoremove --yes
 
 RUN  R --slave -e "install.packages(c('xml2'), dependencies = TRUE)"
-RUN  R --slave -e "install.packages(c('MCMCpack', 'irtoys', 'lintr', 'doParallel'), dependencies = TRUE)"
+RUN  R --slave -e "install.packages(c('MCMCpack', 'irtoys', 'lintr', 'doParallel', 'RUnit'), dependencies = TRUE)"
 
 RUN pip3 install numpy scipy flake8
