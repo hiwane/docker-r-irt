@@ -8,4 +8,4 @@ RUN apt-get -qq update && \
 RUN  R --slave -e "install.packages(c('xml2'), dependencies = TRUE)"
 RUN  R --slave -e "install.packages(c('MCMCpack', 'irtoys', 'lintr', 'doParallel', 'RUnit', 'pryr'), dependencies = TRUE)"
 
-RUN pip3 install numpy scipy flake8
+RUN pip3 install numpy scipy flake8 mysql-connector
